@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Arthur Lelieur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --gray: #64748b;
+            --light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #1e40af);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header h2 {
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+
+        header p {
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        p {
+            color: var(--gray);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            padding: 0.3rem 0;
+            color: var(--gray);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #020617;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arthur Lelieur</h1>
+    <h2>Étudiant en BTS SIO – Informatique</h2>
+    <p>Solutions logicielles et applications métiers</p>
+    <a href="projets.html" class="btn">Voir mes projets 📁</a>
+</header>
+
+<main class="container">
+
+    <section>
+        <h3>👨‍💻 À propos de moi</h3>
+        <p>
+            Je suis actuellement étudiant en <strong>deuxième année de BTS SIO</strong>.
+            Je m’intéresse au <strong>développement informatique</strong> et aux
+            <strong>applications web</strong>.
+        </p>
+        <p>
+            Ce portfolio présente mes projets, mon curriculum vitae,
+            mon parcours et mes compétences.
+        </p>
+    </section>
+
+    <section>
+        <h3>📄 Parcours & CV</h3>
+        <p>
+            Vous pouvez consulter mon parcours scolaire et professionnel
+            ainsi que mon curriculum vitae.
+        </p>
+        <a href="cv.html" class="btn">Voir mon CV</a>
+    </section>
+
+    <section>
+        <h3>🛠️ Compétences</h3>
+
+        <div class="grid">
+            <div class="card">
+                <h4>💻 Développement</h4>
+                <ul>
+                    <li>HTML / CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Markdown</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>🗄️ Bases de données</h4>
+                <ul>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>🖥️ Systèmes & outils</h4>
+                <ul>
+                    <li>Linux / Windows</li>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>📬 Contact</h3>
+        <ul>
+            <li>📧 <strong>Email :</strong> arthur.lelieurpro@gmail.com</li>
+            <li>💻 <strong>GitHub :</strong> <a href="https://github.com/ArthurLelieur" target="_blank">github.com/ArthurLelieur</a></li>
+            <li>💼 <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/arthur-lelieur-92a36a34b" target="_blank">Voir le profil</a></li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 – Arthur Lelieur
+</footer>
+
+</body>
+</html>
