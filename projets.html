@@ -7,6 +7,11 @@
 </head>
 <body>
 
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-ring" aria-hidden="true"></div>
+    <p>Chargement...</p>
+</div>
+
 <header>
     <h1>Mes projets SLAM</h1>
     <p>Applications et solutions développées dans le cadre de ma formation BTS SIO</p>
@@ -15,24 +20,59 @@
 <main class="container">
 
     <section>
-        <h3>💻 Projets Web</h3>
-        <p>Applications web développées avec HTML, CSS, JavaScript et PHP.</p>
-        <a href="projets-web.html" class="btn">Voir les projets web</a>
+        <h3>🧩 Mes projets SLAM</h3>
+        <p>Découvre mes réalisations par type : web, applications et bases de données.</p>
     </section>
 
-    <section>
-        <h3>🧠 Applications & logiciels</h3>
-        <p>Applications répondant à des besoins métiers.</p>
-        <a href="projets-app.html" class="btn">Voir les applications</a>
-    </section>
+    <div class="project-grid">
+        <a href="projets-web.html" class="project-card">
+            <div class="project-thumb">
+                <h4>Projets Web</h4>
+            </div>
+            <div class="project-info">
+                <p>Applications web développées avec HTML, CSS, JavaScript et PHP.</p>
+                <ul class="project-tags">
+                    <li>Responsive</li>
+                    <li>Back-end</li>
+                    <li>Interfaces modernes</li>
+                </ul>
+            </div>
+        </a>
 
-    <section>
-        <h3>🗄️ Bases de données</h3>
-        <p>Conception, modélisation et exploitation de bases de données.</p>
-        <a href="projets-bdd.html" class="btn">Voir les projets BDD</a>
-    </section>
+        <a href="projets-app.html" class="project-card">
+            <div class="project-thumb">
+                <h4>Applications & logiciels</h4>
+            </div>
+            <div class="project-info">
+                <p>Outils métiers et automatisations conçus pour des besoins concrets.</p>
+                <ul class="project-tags">
+                    <li>Gestion de données</li>
+                    <li>Interfaces pratiques</li>
+                    <li>Flux métiers</li>
+                </ul>
+            </div>
+        </a>
 
-    <a href="index.html" class="btn">Retour à l’accueil</a>
+        <a href="projets-bdd.html" class="project-card">
+            <div class="project-thumb">
+                <h4>Bases de données</h4>
+            </div>
+            <div class="project-info">
+                <p>Modélisation, requêtes et maintenance de bases de données professionnelles.</p>
+                <ul class="project-tags">
+                    <li>SQL</li>
+                    <li>Modèle relationnel</li>
+                    <li>Optimisation</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="card card-highlight">
+        <h4>Retour</h4>
+        <p>Reviens à l’accueil pour retrouver les autres sections du portfolio.</p>
+        <a href="index.html" class="btn">Retour à l’accueil</a>
+    </div>
 
 </main>
 
@@ -40,5 +80,6 @@
     © 2026 – Arthur Lelieur
 </footer>
 
+    <script src="assets/js/site.js"></script>
 </body>
 </html>

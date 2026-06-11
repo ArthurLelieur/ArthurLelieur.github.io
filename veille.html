@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-ring" aria-hidden="true"></div>
+    <p>Chargement...</p>
+</div>
+
 <header>
     <h1>Veille technologique</h1>
     <p>Les sujets et technologies que je surveille régulièrement.</p>
@@ -16,23 +21,118 @@
 <main class="container">
 
     <section>
-        <h3>📌 Thématiques suivies</h3>
-        <ul>
-            <li>Développement web moderne (HTML, CSS, JavaScript, TypeScript)</li>
-            <li>Frameworks front-end et outils de build</li>
-            <li>Sécurité, bonnes pratiques et accessibilité</li>
-            <li>Bases de données et administration</li>
-        </ul>
+        <h3>�️ Veille Blender 3D pour le Web</h3>
+        <p>Analyse des patchs Blender qui améliorent l’export 3D, la performance WebGPU et le workflow de création pour le Web.</p>
+        <div class="project-grid">
+            <a href="https://www.blender.org/download/releases/4-2/" target="_blank" rel="noreferrer" class="project-card">
+                <div class="project-thumb">
+                    <img class="project-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Logo Blender">
+                </div>
+                <div class="project-info">
+                    <h4>Optimisation glTF 2.0</h4>
+                    <p>Patch 4.2 pour un export glTF plus léger et des matériaux PBR mieux traduits vers les moteurs Web.</p>
+                    <p class="project-meta">Version 4.2 • Décembre 2025</p>
+                    <ul class="project-tags">
+                        <li>Export optimisé</li>
+                        <li>Textures compressées</li>
+                        <li>Compatibilité Web</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://www.blender.org/download/releases/4-1/" target="_blank" rel="noreferrer" class="project-card">
+                <div class="project-thumb">
+                    <img class="project-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Logo Blender">
+                </div>
+                <div class="project-info">
+                    <h4>Export USD</h4>
+                    <p>Patch 4.1 apportant un export USD plus robuste, utile pour des workflows 3D Web hybrides et des pipelines d’assets.</p>
+                    <p class="project-meta">Version 4.1 • Juin 2025</p>
+                    <ul class="project-tags">
+                        <li>USD</li>
+                        <li>Interopérabilité</li>
+                        <li>Assets professionnels</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://www.blender.org/download/releases/4-0/" target="_blank" rel="noreferrer" class="project-card">
+                <div class="project-thumb">
+                    <img class="project-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Logo Blender">
+                </div>
+                <div class="project-info">
+                    <h4>Cycles WebGPU</h4>
+                    <p>Patch majeur pour rendre Cycles plus performant en WebGPU, ce qui ouvre la voie à des rendus 3D interactifs dans le navigateur.</p>
+                    <p class="project-meta">Version 4.0 • Août 2024</p>
+                    <ul class="project-tags">
+                        <li>WebGPU</li>
+                        <li>Rendus temps réel</li>
+                        <li>Scènes interactives</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://www.blender.org/download/releases/3-5/" target="_blank" rel="noreferrer" class="project-card">
+                <div class="project-thumb">
+                    <img class="project-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Logo Blender">
+                </div>
+                <div class="project-info">
+                    <h4>Geometry Nodes</h4>
+                    <p>Patchs qui simplifient la création procédurale et la génération d’assets réutilisables pour des scènes 3D exportées vers le Web.</p>
+                    <p class="project-meta">Version 3.5 • Février 2025</p>
+                    <ul class="project-tags">
+                        <li>Procédural</li>
+                        <li>Automatisation</li>
+                        <li>Optimisation</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://www.blender.org/download/releases/3-4/" target="_blank" rel="noreferrer" class="project-card">
+                <div class="project-thumb">
+                    <img class="project-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Logo Blender">
+                </div>
+                <div class="project-info">
+                    <h4>Export glTF amélioré</h4>
+                    <p>Amélioration du support glTF pour des textures PBR, des animations et des matériaux plus fiables sur les plateformes Web.</p>
+                    <p class="project-meta">Version 3.4 • Novembre 2024</p>
+                    <ul class="project-tags">
+                        <li>glTF</li>
+                        <li>Matériaux PBR</li>
+                        <li>Compatibilité Web</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-detail-text">
+        <h3>Analyse approfondie</h3>
+        <p>Ces patchs Blender montrent à quel point l’outil est devenu central pour la 3D Web. En améliorant l’export glTF, le support WebGPU et les workflows procéduraux, Blender offre des pipelines plus fluides entre la création 3D et la publication Web.</p>
+        <p>Pour le Web, l’important est de conserver des scènes légères, compatibles et visuellement riches. Blender permet aujourd’hui de préparer ces scènes avec des assets optimisés, des matériaux PBR fiables et des animations bien exportées.</p>
+        <p>En suivant ces évolutions, je peux intégrer des projets 3D interactifs avec une meilleure confiance dans la qualité d’export et les performances côté navigateur.</p>
     </section>
 
     <section>
-        <h3>🌐 Sources principales</h3>
-        <p>Je consulte des blogs, des podcasts, des documentations officielles et des projets open source pour rester à jour sur les évolutions du secteur.</p>
-    </section>
-
-    <section>
-        <h3>⚙️ Mon approche</h3>
-        <p>Je compare les technologies, je teste les nouveautés sur des prototypes et j’intègre les bonnes pratiques apprises dans mes projets.</p>
+        <h3>🔎 Définitions techniques</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>glTF</h4>
+                <p>Format d’échange 3D conçu pour le Web, permettant de charger rapidement des modèles, matériaux et animations dans les navigateurs.</p>
+            </div>
+            <div class="card">
+                <h4>WebGPU</h4>
+                <p>API graphique de nouvelle génération pour le Web, offrant de meilleures performances sur GPU et des rendus 3D plus avancés.</p>
+            </div>
+            <div class="card">
+                <h4>USD</h4>
+                <p>Format universel de scène 3D utilisé pour échanger des pipelines d’assets entre outils comme Blender et les moteurs Web.</p>
+            </div>
+            <div class="card">
+                <h4>Geometry Nodes</h4>
+                <p>Workflow procédural dans Blender qui permet de générer des scènes 3D complexes et des assets réutilisables.</p>
+            </div>
+        </div>
     </section>
 
     <a href="index.html" class="btn">Retour à l’accueil</a>
@@ -43,5 +143,6 @@
     © 2026 – Arthur Lelieur
 </footer>
 
+    <script src="assets/js/site.js"></script>
 </body>
 </html>

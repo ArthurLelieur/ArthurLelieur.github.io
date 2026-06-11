@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-ring" aria-hidden="true"></div>
+    <p>Chargement...</p>
+</div>
+
 <header>
     <h1>Stages</h1>
     <p>Expériences professionnelles et missions réalisées.</p>
@@ -15,25 +20,34 @@
 
 <main class="container">
 
-    <section>
-        <h3>🏢 Stage en entreprise</h3>
-        <p>Durant ma formation, j’ai réalisé des missions autour du développement web, de la maintenance d’applications et de la gestion de bases de données.</p>
-    </section>
+    <div class="timeline-grid">
+        <article class="timeline-card">
+            <span class="timeline-date">Avril 2026</span>
+            <h4>Stage à la SNCF</h4>
+            <p>Participation à la création d’un projet interne avec développement d’une applications en python permettant de placer des post-it sur une image avec plusieurs connexions possibles en même temps via un sharepoint.</p>
+            <h4 style="margin-top: 12px">Compétences utilisées</h4>
+            <ul style="margin-top: 12px">
+                <li>Analyse des besoins utilisateurs</li>
+                <li>Développement Python</li>
+                <li>Intégration avec Sharepoint</li>
+            </ul>
+        </article>
 
-    <section>
-        <h3>🛠️ Ce que j’ai fait</h3>
-        <ul>
-            <li>Analyse des besoins utilisateurs</li>
-            <li>Développement de fonctionnalités en PHP / JavaScript</li>
-            <li>Tests et corrections de bugs</li>
-            <li>Participation à la documentation et au suivi de projet</li>
-        </ul>
-    </section>
-
-    <section>
-        <h3>💡 Compétences développées</h3>
-        <p>J’ai renforcé mes connaissances en développement web, en bases de données et en travail en équipe, tout en découvrant les outils professionnels de suivi de projet.</p>
-    </section>
+        <article class="timeline-card">
+            <span class="timeline-date">Avril 2025</span>
+            <h4>Stage chez arundo.tech</h4>
+            <p>Détection et correction de bugs via la création d'un robot d'automatisation en typescript grâce à l'utilisation du frameworks Playwright.</p>
+            <h4 style="margin-top: 12px">Compétences utilisées</h4>
+            <ul style="margin-top: 12px">
+                <li>Réponses aux demandes</li>
+                <li>Tests et validation</li>
+                <li>Documentation des procédures</li>
+                <li>Collaboration avec l'équipe de développement</li>
+                <li>Automatisation des tests</li>
+                <li>Développement de scripts d'automatisation en Python</li>
+            </ul>
+        </article>
+    </div>
 
     <a href="index.html" class="btn">Retour à l’accueil</a>
 
@@ -43,5 +57,6 @@
     © 2026 – Arthur Lelieur
 </footer>
 
+    <script src="assets/js/site.js"></script>
 </body>
 </html>
