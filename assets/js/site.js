@@ -105,5 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
     setupGallery("towerDefenseGallery", ".btn-gallery[data-gallery='tower-defense']");
     setupGallery("blenderGallery", ".btn-gallery[data-gallery='blender']");
 
-
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            setupGallery("towerDefenseGallery", ".btn-gallery[data-gallery='tower-defense']");
+            setupGallery("blenderGallery", ".btn-gallery[data-gallery='blender']");
+        }, 100);
+    });
 });
